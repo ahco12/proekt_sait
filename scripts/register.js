@@ -7,6 +7,7 @@ import { getAuth, createUserWithEmailAndPassword } from "https://www.gstatic.com
 const firebaseConfig = {
   apiKey: "AIzaSyCVhqYjL6AKp1vPTDgNp_GlUMvjuj3BcNk",
   authDomain: "proektsait-150c9.firebaseapp.com",
+  databaseURL: "https://proektsait-150c9-default-rtdb.europe-west1.firebasedatabase.app",
   projectId: "proektsait-150c9",
   storageBucket: "proektsait-150c9.appspot.com",
   messagingSenderId: "1006914747904",
@@ -21,10 +22,10 @@ const submitRegister = document.getElementById('btnRegister');
 submitRegister.addEventListener("click", function(event) {
   event.preventDefault();
 
-  const email = document.getElementById('email').value.trim();
-  const password = document.getElementById('password').value;
+  const emailRegistration = document.getElementById('emailRegistration').value.trim();
+  const passwordRegistration = document.getElementById('passwordRegistration').value;
 
-  createUserWithEmailAndPassword(auth, email, password)
+  createUserWithEmailAndPassword(auth, emailRegistration, passwordRegistration)
     .then((userCredential) => {
       // User signed up successfully
       const user = userCredential.user;

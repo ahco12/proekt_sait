@@ -7,6 +7,7 @@ import { getAuth, signInWithEmailAndPassword } from "https://www.gstatic.com/fir
 const firebaseConfig = {
   apiKey: "AIzaSyCVhqYjL6AKp1vPTDgNp_GlUMvjuj3BcNk",
   authDomain: "proektsait-150c9.firebaseapp.com",
+  databaseURL: "https://proektsait-150c9-default-rtdb.europe-west1.firebasedatabase.app",
   projectId: "proektsait-150c9",
   storageBucket: "proektsait-150c9.appspot.com",
   messagingSenderId: "1006914747904",
